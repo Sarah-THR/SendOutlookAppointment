@@ -1,0 +1,11 @@
+.page {
+    background-color: black;
+    background-size: cover;
+    margin: 0;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}

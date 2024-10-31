@@ -1,0 +1,23 @@
+﻿@page "/"
+@using Data
+@inject AppointmentService appointmentService
+
+<PageTitle>Index</PageTitle>
+<button type="button" class="btn" @onclick="()=>AddAppointment()">
+    <strong>Ajouter Halloween au calendrier</strong>
+    <div id="container-stars">
+        <div id="stars"></div>
+    </div>
+
+    <div id="glow">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</button>
+
+@code {
+    void AddAppointment()
+    {
+        appointmentService.AddAppointment();
+    }
+}
